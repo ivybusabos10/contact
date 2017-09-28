@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+<body style="background-color: skyblue;">
+    <head>
+
+
+
+
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        
+<script type="text/javascript" src="js/table_script.js"></script>
+</head>
+<title>Ivy's Contact</title>
+<body>
+<center><h1><a style="color:red;">Contact List</a></h1></center>
+<div id="wrapper">
+<table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+<tr>
+<th>Name</th>
+<th>Number</th>
+<th>Group</th>
+</tr>
+
+<tr id="row1">
+<td id="name_row1">Ced</td>
+<td id="no_row1">09.........</td>
+<td id="group_row1">Friends</td>
+<td>
+<input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+<input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+</td>
+</tr>
+
+<tr id="row2">
+<td id="name_row2">Elisa</td>
+<td id="no_row2">09.........</td>
+<td id="group_row2">Friends</td>
+<td>
+<input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+<input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+</td>
+</tr>
+
+<tr id="row3">
+<td id="name_row3">Kim</td>
+<td id="no_row3">09.........</td>
+<td id="group_row3">Friends</td>
+<td>
+<input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+<input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+<input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+</td>
+</tr>
+
+<tr>
+<td><input type="text" id="new_name"></td>
+<td><input type="text" id="new_no"></td>
+<td><input type="text" id="new_group"></td>
+<td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+</tr>
+
+</table>
+</div>
+
+
+
+
+
+    </body>
+</html>
